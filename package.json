@@ -1,0 +1,22 @@
+{
+  "name": "natours-project",
+  "version": "1.0.0",
+  "description": "really dont care",
+  "main": "index.js",
+  "scripts": {
+    "test": "there was a farmer had dog bingo was his name",
+    "sass": "sass NProj.scss NProj.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "some repository"
+  },
+  "keywords": [
+    "hahahhahaha"
+  ],
+  "author": "javeria the great",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.35.1"
+  }
+}

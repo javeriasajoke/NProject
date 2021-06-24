@@ -1,0 +1,50 @@
+$color-one:#98a5a3;
+$color-two:#507167;
+$color-three:#8e989e;
+$color-four:#48626a;
+$color-five: #a46428;
+$color-six:#455340;
+$color-seven: #b38e52;
+$color-eight: #7c7661;
+$color-nine: #cdc4b9;
+$color-10: #1b271d;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    padding: 20px;
+    color: $color-10;
+}
+.header{
+    height: 95vh;
+    background-position: center;
+    background-size: cover;
+    background-image:linear-gradient(to right bottom, rgba($color-nine, 0.4), rgba($color-three, 0.4)), url("images/natours.jpg");
+    .text-box{
+    padding: 2px;
+    position: relative;
+    .main{
+            position: absolute;
+            top: 200px;
+            left: 300px;
+            transform: translateX(50px);
+            .first{
+                display: block;
+                text-align: center;
+                font-size: 1.3em;
+                letter-spacing: 20px;
+            }
+            .second{
+                display: block;
+                font-size: 0.6em;
+                letter-spacing: 10px;
+            }
+    }
+    }
+}
