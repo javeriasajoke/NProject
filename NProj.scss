@@ -25,26 +25,118 @@ body{
     height: 95vh;
     background-position: center;
     background-size: cover;
-    background-image:linear-gradient(to right bottom, rgba($color-nine, 0.4), rgba($color-three, 0.4)), url("images/natours.jpg");
+    background-image:linear-gradient(to right bottom, rgba($color-nine, 0.4), rgba($color-three, 0.4)) ,url("images/natours.jpg");
+    clip-path: polygon(0 0, 100% 1%, 100% 82%, 0% 100%);
+    .logoimg{
+        position:absolute;
+        .logo{
+            position: relative;
+            height: 60px;
+            width: 66px;
+        }
+    
+    }
     .text-box{
-    padding: 2px;
-    position: relative;
+        position: absolute;
+        top: 200px;
+        left: 300px;
+        transform: translateX(50px);
+        text-align: center;
     .main{
-            position: absolute;
-            top: 200px;
-            left: 300px;
-            transform: translateX(50px);
+        margin-bottom: 10px;
+            
             .first{
                 display: block;
                 text-align: center;
                 font-size: 1.3em;
                 letter-spacing: 20px;
+                animation-name: firstt;
+                animation-duration: 2s;
             }
             .second{
                 display: block;
                 font-size: 0.6em;
                 letter-spacing: 10px;
+                animation-name: secondd;
+                animation-duration: 2s;;
             }
+        }
+    .btn:link, .btn:visited{
+            text-decoration: none;
+            display: inline-block;
+            padding: 10px 15px;
+            transition: all .2s;
+            letter-spacing: 1.2;
+            position: relative;
+        }
+    .btn-white{
+        color: $color-10;
+        background-color: $color-nine;
+        border-radius: 100px;
+        position: relative;
+        height: 45px;
+        width: 205px;
+        &:hover{
+            transform: translateY(-2px);
+            box-shadow: 0 5px 3px rgba($color-nine, 0.4);
+        }
+        &:active{
+            transform: translateY(-1px);
+            
+        }
     }
     }
+
 }
+.btn::after{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+.btn-white::after{
+    background-color: $color-nine;
+}
+.btn-white:hover::after{
+    //animation-name: heartbeat;
+    //animation-duration:.5s;
+    transform: scale(1.4);
+    opacity: 0;
+}
+
+
+@keyframes firstt {
+    0%{
+        transform: translateX(-10px);
+        opacity: 0;
+    }
+    80%{
+        transform: translateX(10px);
+    }
+    100%{
+        transform: translate(0);
+        opacity: 1;
+    }
+    
+}
+@keyframes secondd {
+    0%{
+        transform: translateX(10px);
+        opacity: 0;
+    }
+    80%{
+        transform: translateX(-10px);
+    }
+    100%{
+        transform: translate(0);
+        opacity: 1;
+    }
+    
+}
+

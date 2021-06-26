@@ -1,11 +1,12 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 400;
   line-height: 1.7;
   padding: 20px;
@@ -16,28 +17,176 @@ body {
   height: 95vh;
   background-position: center;
   background-size: cover;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(205, 196, 185, 0.4)), to(rgba(142, 152, 158, 0.4))), url("images/natours.jpg");
   background-image: linear-gradient(to right bottom, rgba(205, 196, 185, 0.4), rgba(142, 152, 158, 0.4)), url("images/natours.jpg");
+  -webkit-clip-path: polygon(0 0, 100% 1%, 100% 82%, 0% 100%);
+          clip-path: polygon(0 0, 100% 1%, 100% 82%, 0% 100%);
 }
-.header .text-box {
-  padding: 2px;
+
+.header .logoimg {
+  position: absolute;
+}
+
+.header .logoimg .logo {
   position: relative;
+  height: 60px;
+  width: 66px;
 }
-.header .text-box .main {
+
+.header .text-box {
   position: absolute;
   top: 200px;
   left: 300px;
-  transform: translateX(50px);
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+  text-align: center;
 }
+
+.header .text-box .main {
+  margin-bottom: 10px;
+}
+
 .header .text-box .main .first {
   display: block;
   text-align: center;
   font-size: 1.3em;
   letter-spacing: 20px;
+  -webkit-animation-name: firstt;
+          animation-name: firstt;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
+
 .header .text-box .main .second {
   display: block;
   font-size: 0.6em;
   letter-spacing: 10px;
+  -webkit-animation-name: secondd;
+          animation-name: secondd;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 
+.header .text-box .btn:link, .header .text-box .btn:visited {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 15px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  letter-spacing: 1.2;
+  position: relative;
+}
+
+.header .text-box .btn-white {
+  color: #1b271d;
+  background-color: #cdc4b9;
+  border-radius: 100px;
+  position: relative;
+  height: 45px;
+  width: 205px;
+}
+
+.header .text-box .btn-white:hover {
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+  -webkit-box-shadow: 0 5px 3px rgba(205, 196, 185, 0.4);
+          box-shadow: 0 5px 3px rgba(205, 196, 185, 0.4);
+}
+
+.header .text-box .btn-white:active {
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.btn-white::after {
+  background-color: #cdc4b9;
+}
+
+.btn-white:hover::after {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+  opacity: 0;
+}
+
+@-webkit-keyframes firstt {
+  0% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+    opacity: 0;
+  }
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes firstt {
+  0% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+    opacity: 0;
+  }
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes secondd {
+  0% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+    opacity: 0;
+  }
+  80% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes secondd {
+  0% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+    opacity: 0;
+  }
+  80% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+    opacity: 1;
+  }
+}
 /*# sourceMappingURL=NProj.css.map */
