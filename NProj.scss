@@ -66,49 +66,56 @@ body{
             display: inline-block;
             padding: 10px 15px;
             transition: all .2s;
-            letter-spacing: 1.2;
+            letter-spacing: 0.1em;
             position: relative;
+            overflow: hidden;
+            z-index: 1;
+            span{
+                position: absolute;
+                background-color: $color-seven;
+                width: 25%;
+                height: 100%;
+                z-index: -1;
+                transition: .5s;
+                border-radius: 100px;
+                transform: translateY(150%);
+            }
+            .span1{
+                left:0;
+                transition-delay:0s ;
+            }
+            .span2{
+                left:25%;
+                transition-delay: .1s;
+            }
+            .span3{
+                left:50%;
+                transition-delay: .2s;
+            }
+            .span4{
+                left:75%;
+                transition-delay: .3s;
+            }
         }
     .btn-white{
         color: $color-10;
         background-color: $color-nine;
         border-radius: 100px;
         position: relative;
-        height: 45px;
-        width: 205px;
+        line-height: 2em;
+        font-weight: bold;
         &:hover{
-            transform: translateY(-2px);
-            box-shadow: 0 5px 3px rgba($color-nine, 0.4);
-        }
-        &:active{
-            transform: translateY(-1px);
-            
+            background-color: $color-nine;
+            color: $color-10;
+            span{
+                transform: translateY(0) scale(2);
+            }
         }
     }
     }
 
 }
-.btn::after{
-    content: "";
-    display: inline-block;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    border-radius: 100px;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: all .4s;
-}
-.btn-white::after{
-    background-color: $color-nine;
-}
-.btn-white:hover::after{
-    //animation-name: heartbeat;
-    //animation-duration:.5s;
-    transform: scale(1.4);
-    opacity: 0;
-}
+
 
 
 @keyframes firstt {

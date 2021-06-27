@@ -73,8 +73,47 @@ body {
   padding: 10px 15px;
   -webkit-transition: all .2s;
   transition: all .2s;
-  letter-spacing: 1.2;
+  letter-spacing: 0.1em;
   position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.header .text-box .btn:link span, .header .text-box .btn:visited span {
+  position: absolute;
+  background-color: #b38e52;
+  width: 25%;
+  height: 100%;
+  z-index: -1;
+  -webkit-transition: .5s;
+  transition: .5s;
+  border-radius: 100px;
+  -webkit-transform: translateY(150%);
+          transform: translateY(150%);
+}
+
+.header .text-box .btn:link .span1, .header .text-box .btn:visited .span1 {
+  left: 0;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+.header .text-box .btn:link .span2, .header .text-box .btn:visited .span2 {
+  left: 25%;
+  -webkit-transition-delay: .1s;
+          transition-delay: .1s;
+}
+
+.header .text-box .btn:link .span3, .header .text-box .btn:visited .span3 {
+  left: 50%;
+  -webkit-transition-delay: .2s;
+          transition-delay: .2s;
+}
+
+.header .text-box .btn:link .span4, .header .text-box .btn:visited .span4 {
+  left: 75%;
+  -webkit-transition-delay: .3s;
+          transition-delay: .3s;
 }
 
 .header .text-box .btn-white {
@@ -82,44 +121,18 @@ body {
   background-color: #cdc4b9;
   border-radius: 100px;
   position: relative;
-  height: 45px;
-  width: 205px;
+  line-height: 2em;
+  font-weight: bold;
 }
 
 .header .text-box .btn-white:hover {
-  -webkit-transform: translateY(-2px);
-          transform: translateY(-2px);
-  -webkit-box-shadow: 0 5px 3px rgba(205, 196, 185, 0.4);
-          box-shadow: 0 5px 3px rgba(205, 196, 185, 0.4);
-}
-
-.header .text-box .btn-white:active {
-  -webkit-transform: translateY(-1px);
-          transform: translateY(-1px);
-}
-
-.btn::after {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  border-radius: 100px;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  -webkit-transition: all .4s;
-  transition: all .4s;
-}
-
-.btn-white::after {
   background-color: #cdc4b9;
+  color: #1b271d;
 }
 
-.btn-white:hover::after {
-  -webkit-transform: scale(1.4);
-          transform: scale(1.4);
-  opacity: 0;
+.header .text-box .btn-white:hover span {
+  -webkit-transform: translateY(0) scale(2);
+          transform: translateY(0) scale(2);
 }
 
 @-webkit-keyframes firstt {
