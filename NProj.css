@@ -189,4 +189,131 @@ body {
     opacity: 1;
   }
 }
+
+.section1 {
+  height: 120%;
+  background-color: #f8f8f8;
+  margin-top: -15%;
+  padding: 25px;
+}
+
+.aboutsec {
+  padding-top: 200px;
+}
+
+.centerheading {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.heading1 {
+  letter-spacing: 0.1em;
+  background-image: -webkit-gradient(linear, left top, right top, from(#455340), to(#8e989e));
+  background-image: linear-gradient(to right, #455340, #8e989e);
+  display: inline-block;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 700;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.heading1:hover {
+  -webkit-transform: skewY(-9deg) scale(1.1);
+          transform: skewY(-9deg) scale(1.1);
+  text-shadow: 2px 5px 15px rgba(110, 110, 110, 0.699);
+}
+
+.textimg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  padding: 0 4rem 0 4rem;
+  text-align: left;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 10px;
+  font-size: 0.9em;
+}
+
+.imgcontainer {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  left: 15px;
+}
+
+.heading3 {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+p:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.btn-text:link, .btn-text:visited {
+  display: inline-block;
+  text-decoration: none;
+  text-align: left;
+  padding: 5px;
+  color: #1b271d;
+  border-bottom: 1px solid #1b271d;
+}
+
+.btn-text:hover {
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+  -webkit-box-shadow: 0 3px 4px #7c7661;
+          box-shadow: 0 3px 4px #7c7661;
+  background-color: #1b271d;
+  color: #f8f8f8;
+}
+
+.btn-text:active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-box-shadow: 0 3px 4px #7c7661;
+          box-shadow: 0 3px 4px #7c7661;
+  background-color: #1b271d;
+  color: #f8f8f8;
+}
+
+.imgcontainer {
+  position: relative;
+}
+
+.imgcontainer-img {
+  width: 50%;
+  -webkit-box-shadow: 0 2px 3px #b38e52;
+          box-shadow: 0 2px 3px #b38e52;
+  position: absolute;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  z-index: 9;
+}
+
+.imgcontainer-img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  z-index: 10;
+}
+
+.img2 {
+  left: 160px;
+  top: 30px;
+}
+
+.img3 {
+  bottom: 30px;
+  left: 60px;
+}
 /*# sourceMappingURL=NProj.css.map */

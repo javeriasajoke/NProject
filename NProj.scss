@@ -139,4 +139,109 @@ body{
     }
     
 }
+.section1{
+    height: 120%;
+    background-color: rgb(248, 248, 248);
+    margin-top: -15%;
+    padding: 25px;
+}
+.aboutsec{
+    padding-top: 200px;
+}
+.centerheading{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.heading1{
+    letter-spacing: 0.1em;
+    background-image: linear-gradient(to right, $color-six, $color-three);
+    display: inline-block;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 700;
+    transition: all .2s;
 
+    &:hover{
+        transform: skewY(-9deg) scale(1.1);
+        text-shadow: 2px 5px 15px rgba(110, 110, 110, 0.699);
+    }
+}
+.textimg{
+    display: flex;
+    //background-color: burlywood;
+    text-align: center;
+    padding: 0 4rem 0 4rem;
+    text-align: left;
+    justify-content: space-between;
+}
+.text{
+    flex: 1;
+    padding: 10px;
+    font-size: 0.9em;
+}
+.imgcontainer{
+    flex: 1;
+    left: 15px;
+}
+.heading3{
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    //text-align: left;
+}
+p{
+    //text-align: left;
+    &:not(:last-child){
+        margin-bottom: 1rem;
+    }
+}
+.btn-text{
+    &:link,
+    &:visited{
+        display: inline-block;
+        text-decoration: none;
+        text-align: left;
+        padding: 5px;
+        color: $color-10;
+        border-bottom: 1px solid $color-10;
+
+    }
+    &:hover{
+        transform: translateY(-2px);
+        box-shadow: 0 3px 4px $color-eight;
+        background-color: $color-10;
+        color: rgb(248, 248, 248);
+
+
+    }
+    &:active{
+        transform: translateY(0);
+        box-shadow: 0 3px 4px $color-eight;
+        background-color: $color-10;
+        color: rgb(248, 248, 248);
+    }
+}
+.imgcontainer{
+    position: relative;
+    &-img{
+        width: 50%;
+        box-shadow: 0 2px 3px $color-seven;
+        position: absolute;
+        transition: all .2s;
+        z-index: 9;
+        &:hover{
+            transform: scale(1.1);
+            z-index: 10;
+        }
+    }
+}
+.img1{
+    
+}
+.img2{
+    left: 160px;
+    top: 30px;
+}
+.img3{
+    bottom: 30px;
+    left: 60px;
+}
