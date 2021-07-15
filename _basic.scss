@@ -1,0 +1,28 @@
+
+//$color-three:#9cd4a4; header gradient, text-gradient with color-6 which got deleted., feature box gradient
+//$color-nine: #a4d1b3; header gradient, btn background color, feature box gradient, featurebox background
+//$color-10: #16301a; text color, sec-btn border bottom, boxshadow of feature box
+$color-11: rgba(110, 110, 110, 0.699);
+$color-12: rgb(248, 248, 248); //sec-btn
+
+$gradient-color1: #53c3c9;
+//$gradient-color2: #CEDBE4;
+$gradient-color2: #ddaf7a;
+$button-color:#e96b17;
+$text-color:#2C3129;
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    padding: 20px;
+    background-color:honeydew;
+}

@@ -1,0 +1,63 @@
+.section2{
+    padding: 15em 0;
+}
+.featuresec{
+    height: 30em;
+    display: flex;
+    //background-color: darkgray;
+    justify-content: space-around;
+    align-items: center;
+    background-image:linear-gradient(to right bottom, rgba($gradient-color1, 0.8), rgba($gradient-color2, 0.8)), url(images/natours1.jpg);
+    background-position: center;
+    background-size: cover;
+    transform: skewY(-7deg);
+    margin-top: -12rem;
+
+}
+.featuresec2{
+    width: inherit;
+    height: 18em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    //background-color: lawngreen;
+    width: (13em*4)+10em;
+    transform: skewY(7deg);
+}
+.featurebox{
+    height: 15em;
+    width: 13em;
+    //background-color: cornflowerblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgba($text-color, 0.7);
+    box-shadow: 0 1.5rem 1.5rem rgba($color-11, 0.5);
+    transition: transform .2s;
+    //transform: skewY(7deg);
+    &-h3{
+        color: white;
+    }
+    
+
+    &-p{
+        text-align: center;
+        font-size: 0.8em;
+        color: white;
+    }
+
+    &-icon{
+        font-size: 3rem;
+        background-image: linear-gradient(to right, $gradient-color1, $gradient-color2);
+        display: inline-block;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+    &:hover{
+        transform: translateY(-1rem) scale(1.03);
+    }
+}

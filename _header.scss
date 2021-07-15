@@ -1,0 +1,84 @@
+.header{
+    height: 95vh;
+    background-position: center;
+    background-size: cover;
+    background-image:linear-gradient(to right bottom, rgba($gradient-color1, 0.8), rgba($gradient-color2, 0.8)) ,url("images/natours.jpg");
+    clip-path: polygon(0 0, 100% 1%, 100% 82%, 0% 100%);
+
+    //logo
+
+    .logoimg{
+        position:absolute;
+        .logo{
+            position: relative;
+            height: 60px;
+            width: 66px;
+        }
+    
+    }
+
+    //text-box, headings and ...
+
+    .text-box{
+        position: absolute;
+        top: 200px;
+        left: 300px;
+        transform: translateX(50px);
+        text-align: center;
+        color: white;
+    .main{
+        margin-bottom: 10px;
+            
+            .first{
+                display: block;
+                text-align: center;
+                font-size: 1.3em;
+                letter-spacing: 20px;
+                animation-name: firstt;
+                animation-duration: 2s;
+            }
+            .second{
+                display: block;
+                font-size: 0.6em;
+                letter-spacing: 10px;
+                animation-name: secondd;
+                animation-duration: 2s;;
+            }
+        }
+
+
+    
+
+    }
+}
+//text-animations..
+
+@keyframes firstt {
+    0%{
+        transform: translateX(-10px);
+        opacity: 0;
+    }
+    80%{
+        transform: translateX(10px);
+    }
+    100%{
+        transform: translate(0);
+        opacity: 1;
+    }
+    
+}
+
+@keyframes secondd {
+    0%{
+        transform: translateX(10px);
+        opacity: 0;
+    }
+    80%{
+        transform: translateX(-10px);
+    }
+    100%{
+        transform: translate(0);
+        opacity: 1;
+    }
+    
+}

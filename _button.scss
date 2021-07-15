@@ -1,0 +1,51 @@
+
+.btn:link, .btn:visited{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 15px;
+    transition: all .2s;
+    letter-spacing: 1.2;
+    position: relative;
+}
+
+.btn::after{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white{
+    //color: $text-color;
+    color: white;
+    background-color:$text-color;
+    border-radius: 100px;
+    position: relative;
+    height: 45px;
+    width: 205px;
+    &:hover{
+        transform: translateY(-2px);
+        box-shadow: 0 5px 3px rgba($color-11, 0.4);
+    }
+    &:active{
+        transform: translateY(-1px);
+        
+    }
+}
+
+.btn-white::after{
+    background-color:$text-color;
+    //background-color: transparent;
+}
+.btn-white:hover::after{
+    //animation-name: heartbeat;
+    //animation-duration:.5s;
+    transform: scale(1.4);
+    opacity: 0;
+}
