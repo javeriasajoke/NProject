@@ -1,0 +1,42 @@
+$gutter-h: 6rem;
+.row{
+    max-width: 70rem;
+    margin: 0 auto;
+    //background-color: rgb(230, 143, 29);
+    //height: 10rem;
+    display: flex;
+
+    &:not(:last-child){
+        margin-bottom: 30px;
+    }
+
+  
+}
+.col-1-of-3{
+ //background-color: cornflowerblue;
+ width: calc((100% - #{$gutter-h})/3);
+ //height: 10rem;
+
+ &:not(:last-child){
+     margin-right: $gutter-h;
+ }
+}
+
+.col-1-of-2{
+    //background-color: cornflowerblue;
+    width: calc((100% - #{$gutter-h})/2);
+    //height: 10rem;
+   
+    &:not(:last-child){
+        margin-right: $gutter-h;
+    }
+   }
+
+@mixin clearfix {
+    &::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+}

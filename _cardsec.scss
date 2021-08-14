@@ -1,0 +1,136 @@
+.card{
+    perspective: 150rem;
+    position: relative;
+    
+    
+    .card-side{
+        height: 30rem;
+        //background-color: darkorchid;
+        transition: all .6s ease;
+        position: absolute;
+        backface-visibility: hidden;
+        width: 100%;
+        box-shadow: 0 1rem 1rem $color-12;
+        //overflow: hidden;
+        
+        
+
+    }
+    .card-side-front{
+        //background-color: rgb(77, 187, 187);
+        background-color: white;
+
+      }
+      
+
+      .card-side-back{
+          background-color: dodgerblue;
+          transform: rotateY(180deg);
+
+      }
+    
+    &:hover .card-side-front{
+        transform: rotateY(180deg);
+    }
+    &:hover .card-side-back{
+        transform: rotateY(0);
+    }
+}
+.card-side-back-1{
+         background-image: linear-gradient(to right bottom, $gradient2-color1, $gradient2-color2);
+}
+.card-side-back-2{
+    background-image: linear-gradient(to right bottom, $gradient-color1, $gradient-color2);
+}
+.card-side-back-3{
+    background-image:linear-gradient(to right bottom, $gradient3-color1, $gradient3-color2) ;
+}
+
+
+.card-front-img{
+    height: 15rem;
+    background-size: cover;
+    background-blend-mode: screen;
+    clip-path: polygon(0 0, 100% 0%, 100% 89%, 0% 100%);
+
+}
+
+.front-img-1{
+    background-image:linear-gradient(to right bottom, $gradient2-color1, $gradient2-color2), url(images/river.jpg);
+
+}
+.front-img-2{
+    background-image: linear-gradient(to right bottom, $gradient-color1, $gradient-color2), url(images/natourss.jpg);
+}
+.front-img-3{
+    background-image: linear-gradient(to right bottom, $gradient3-color1, $gradient3-color2), url(images/natoursss.jpg);
+}
+
+.card-front-h4{
+    font-size: 1.7em;
+    font-weight: 300px;
+    color: $color-12;
+    text-transform: uppercase;
+    position: absolute;
+    top: 9rem;
+    right:2rem;
+    width: 70%;
+    text-align: right;
+    padding: 0.5;
+    box-decoration-break: clone;
+    
+}
+
+.span-h41{
+    background-image: linear-gradient(to right bottom, $gradient2-color1, $gradient2-color2);
+}
+.span-h42{
+    background-image: linear-gradient(to right bottom, $gradient-color1, $gradient-color2);
+}
+.span-h43{
+    background-image: linear-gradient(to right bottom, $gradient3-color1, $gradient3-color2);
+}
+
+.card-info-ul{
+    width: 80%;
+    list-style: none;
+    padding: 1rem;
+    //background-color: burlywood;
+    margin: 0 auto;
+}
+.card-info-li{
+    text-align: center;
+    padding: 0.5rem;
+
+    &:not(:last-child){
+        border-bottom: 1px solid black;
+    }
+}
+
+.side-back-info{
+    //background-color: yellow;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &-btn{
+        text-align: center;
+    }
+}
+
+.side-back-info-only{
+    font-size: 1.3em;
+    padding: 10px;
+}
+.side-back-info-price{
+    font-size: 2.7em;
+    h1{
+        font-weight: 200;
+    }
+}
+
+.tour-btn{
+    //background-color: cadetblue;
+    text-align: center;
+}

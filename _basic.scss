@@ -5,11 +5,19 @@
 $color-11: rgba(110, 110, 110, 0.699);
 $color-12: rgb(248, 248, 248); //sec-btn
 
-$gradient-color1: #53c3c9;
+$gradient-color1: #09f328;
 //$gradient-color2: #CEDBE4;
-$gradient-color2: #ddaf7a;
+$gradient-color2: #88ee8d;
 $button-color:#e96b17;
 $text-color:#2C3129;
+
+$gradient2-color1:#f85d15;
+$gradient2-color2:#fd9839;
+
+$gradient3-color1:#29adf0;
+$gradient3-color2:#57ebe6;
+
+$footercolor: rgb(39, 37, 37);
 
 
 *{
@@ -25,4 +33,8 @@ body{
     line-height: 1.7;
     padding: 20px;
     background-color:honeydew;
+}
+
+.tours{
+    height: 100vh;
 }

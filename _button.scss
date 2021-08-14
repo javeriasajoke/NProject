@@ -49,3 +49,34 @@
     transform: scale(1.4);
     opacity: 0;
 }
+
+
+//btn-green
+
+.btn-green{
+    color: white;
+    background-color:$gradient-color1;
+    border-radius: 100px;
+    position: relative;
+    height: 45px;
+    width: 205px;
+    &:hover{
+        transform: translateY(-2px);
+        box-shadow: 0 5px 3px rgba($color-11, 0.4);
+    }
+    &:active{
+        transform: translateY(-1px);
+        
+    }
+}
+
+.btn-green::after{
+    background-color:$gradient-color1;
+    //background-color: transparent;
+}
+.btn-green:hover::after{
+    //animation-name: heartbeat;
+    //animation-duration:.5s;
+    transform: scale(1.4);
+    opacity: 0;
+}

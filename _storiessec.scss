@@ -1,0 +1,77 @@
+.sec-stories{
+    margin-top: 2rem;
+    padding: 10rem;
+    //background-color: rgb(240, 190, 116);
+    position: relative;
+}
+.stories{
+    //background-color: cadetblue;
+    background-color: white;
+    margin:0 auto;
+    width: 80%;
+    box-shadow: 0 3px 6px rgb(87, 84, 84);
+    border-radius: 4px;
+    padding: 4rem;
+    transform: skewX(-12deg);
+    &:hover .sec-stories-caption{
+        transform: translate(-50%, -50%);
+        opacity: 1;
+        transition: all .5s;
+    }
+    &:hover .sec-stories-imgg{
+        transform: scale(1);
+        filter: blur(3px) brightness(80%);
+        transition: all .5s;
+    }
+}
+
+.sec-stories-img{
+    height: 10rem;
+    width: 10rem;
+    //background-color: chocolate;
+    float: left;
+    clip-path: circle(50% at 50% 50%);
+    shape-outside: circle(45% at 50% 50%);
+    transform: translateX(-2rem) skewX(12deg);
+    position: relative;
+
+    .sec-stories-imgg{
+        width: 100%;
+        background-position: bottom right;
+        //transform: translate(-8px, -8px);
+        transform: translateY(-8px) scale(1.1);
+        backface-visibility: hidden;
+        
+    }
+
+}
+.sec-stories-text{
+    transform: skewX(12deg);
+}
+.sec-stories-caption{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    opacity: 0;
+
+}
+.sec-stories-btn{
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.sec-stories-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    .bg-video{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
