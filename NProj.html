@@ -11,7 +11,20 @@
     <link rel="stylesheet" href="basicicons.css">
 </head>
 <body>
-
+   <div class="navigation">
+       <input type="checkbox" class="nav-input" id="navi">
+       <label for="navi" class="nav-label"><span>&equiv;</span></label>
+       <div class="nav-display">&nbsp;</div>
+       <nav class="nav-nav">
+           <ul class="nav-ul">
+               <li class="nav-li"><a href="" class="nav-a"><span>01</span> About Natours</a></li>
+               <li class="nav-li"><a href="" class="nav-a"><span>02</span> Your Benifits</a></li>
+               <li class="nav-li"><a href="" class="nav-a"><span>03</span> Popular Tours</a></li>
+               <li class="nav-li"><a href="" class="nav-a"><span>04</span> Stories</a></li>
+               <li class="nav-li"><a href="" class="nav-a"><span>05</span> Book Now</a></li>
+           </ul>
+       </nav>
+   </div>
 
 
     <div class="header">
@@ -87,7 +100,7 @@
             </h2>
         </div>
     
-        <div class="tours">
+        <div class="tours" id="section-tours">
             <div class="row">
                 <div class="col-1-of-3">
                     <div class="card">
@@ -113,7 +126,7 @@
                             <div class="side-back-info">
                                 <div class="side-back-info-only"><h5>only</h5></div>
                                 <div class="side-back-info-price"><h1>$297</h1></div>
-                                <div class="side-back-info-btn"><a href="#" class="btn btn-white">Book Now!</a></div>
+                                <div class="side-back-info-btn"><a href="#popup" class="btn btn-white">Book Now!</a></div>
                             </div>
                         </div>
                     </div>
@@ -121,7 +134,7 @@
                 </div>
                 <div class="col-1-of-3">
                     <div class="card">
-                        <div class="card-side card-side-front card-side-front-1">
+                        <div class="card-side card-side-front card-side-front-2">
                           <div class="card-front-img front-img-2">
 
                           </div>
@@ -150,7 +163,7 @@
                 </div>
                 <div class="col-1-of-3">
                     <div class="card">
-                        <div class="card-side card-side-front card-side-front-1">
+                        <div class="card-side card-side-front card-side-front-3">
                           <div class="card-front-img front-img-3">
 
                           </div>
@@ -186,7 +199,7 @@
     <section class="sec-stories">
         <div class="sec-stories-video">
             <video class="bg-video" autoplay muted loop>
-                <source src="images/Waves crashing.mp4" type="video/mp4">
+                <source src="images/The big, blue ocean.mp4" type="video/mp4">
             </video>
         </div>
         <div class="centerheading">
@@ -197,24 +210,24 @@
         <div class="row">
             <div class="stories">
                <figure class="sec-stories-img">
-                    <img src="images/story1.jpg" alt="girlll" class="sec-stories-imgg">
+                    <img src="images/story2.jpg" alt="girlll" class="sec-stories-imgg">
                     <figcaption class="sec-stories-caption"> This is me</figcaption>
                </figure>
                <div class="sec-stories-text">
-                   <h3 class="sec-stories-h3">I am feeling happy with my friend ewheb</h3>
-                   <p class="sec-stories-p">hjfgdy hjfdshf utyurtyirut hhj fdlfo rewrew nfdn wewqe jjnj rtfmdbdbfk adjhjfho andndjshu sdsn nbrjeb lkirur nbwn rtydh cbvhhji skkkketgdf alkdur tionhg vhhtyu dfgtuiokmsd loiuye r bzgcj</p>
+                   <h3 class="sec-stories-h3">One of the Best Travelling Experience of My Life</h3>
+                   <p class="sec-stories-p">Travelling is one of the best ways to replenish your energy. Visiting new places helps you realize that there is more to the world than what you have seen or experienced, and will ever be able to see in this short span of life. I totally loved this place, I'am glade I came here. It's a great place to visit and...</p>
                </div>
             </div>
         </div>
         <div class="row">
             <div class="stories">
                <figure class="sec-stories-img">
-                    <img src="images/story1.jpg" alt="girlll" class="sec-stories-imgg">
+                    <img src="images/story3.jpg" alt="girlll" class="sec-stories-imgg">
                     <figcaption class="sec-stories-caption"> This is me</figcaption>
                </figure>
                <div class="sec-stories-text">
-                   <h3 class="sec-stories-h3">I am feeling happy with my friend ewheb</h3>
-                   <p class="sec-stories-p">hjfgdy hjfdshf utyurtyirut hhj fdlfo rewrew nfdn wewqe jjnj rtfmdbdbfk adjhjfho andndjshu sdsn nbrjeb lkirur nbwn rtydh cbvhhji skkkketgdf alkdur tionhg vhhtyu dfgtuiokmsd loiuye r bzgcj</p>
+                   <h3 class="sec-stories-h3">I loved their services</h3>
+                   <p class="sec-stories-p">This travelling Agency is so helpful. And its a really good place to visit for all kind of people. The construction of road and highways gave easy access to merchants to travel faster and safer because the road provide direction and avoid them from getting lost. </p>
                </div>
             </div>
         </div>
@@ -276,6 +289,25 @@
             </div>
         </div>
     </section>
+    <div class="popup" id="popup">
+        <div class="popup-box">
+          <div class="popup-photo">
+
+          </div>
+          <div class="popup-text">
+              <a href="#section-tours" class="popup-close">&times;</a>
+              <div class="popup-hradings">
+                <h1 class="primary-h heading1">START BOOKING NOW</h1>
+                <h4 class="secondary-h">IMPORTANT &ndash; PLEASE READ THE TERMS AND CONDITIONS FIRST</h4>
+              </div>
+              <div class="popup-paragraphs">
+                <p class="popup-p">Lorem ipsum dolor sit amet consectetur gtyu iopmk adipisicing elit. Inventore, a labore omnis reprehenderit eveniet, ab facere molestias repudiandae quis quas animi minima aliquam asperiores, hic odit nobis voluptas expedita</p>
+                <p class="popup-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, a labore omnis reprehenderit eveniet, ab facere molestias repudiandae quis quas animi minima aliquam asperiores, hic odit nobis voluptas rtuick</p>
+              </div>
+              <a href="#" class="popup-btn btn btn-green">BOOK NOW</a>
+          </div>
+        </div>
+    </div>
 
     <script> </script>  
 </body>

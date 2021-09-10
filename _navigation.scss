@@ -1,0 +1,96 @@
+.navigation{
+    //background-color: indianred;
+    width: 100%;
+    height: 100%;
+
+}
+
+.nav-input{
+    display: none;
+}
+
+.nav-label{
+    font-size: 2rem;
+    color: $text-color;
+    //position: absolute;
+    right: 2rem;
+    top: 1.5rem;
+    z-index: 3000;
+    position: fixed;
+    background-color: $color-12;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.329);
+    cursor: pointer;
+    span{
+        position: absolute;
+        left: 1rem;
+        bottom: 0rem;
+    }
+}
+.nav-display{
+    height: 2rem;
+    width: 2rem;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    border-radius: 50%;
+    //background-color: lightcoral;
+    background-image: radial-gradient($gradient-color1, $gradient-color2);
+    position: fixed;
+    z-index: 2000;
+    //width: 100%;
+    transition: transform .4s;
+}
+.nav-nav{
+    height: 100vh;
+    position: fixed;
+    z-index: 2000;
+    //width: 100%;
+    width: 0;
+    opacity: 0;
+    transition: all .4s;
+}
+.nav-ul{
+    list-style: none;
+    //padding: 2rem;
+    position: absolute;
+    left: 40%;
+    top: 15%;
+    //transform: translate(-50%, -50%);
+}
+.nav-li{
+    font-size: 1.8rem;
+}
+.nav-a{
+    padding: .4rem 2rem;
+    display: inline-block;
+    text-decoration: none;
+    color: $color-12;
+    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-12 50%);
+    background-size: 250%;
+    transition: all .5s;
+    span{
+        margin-right: 1.5rem;
+        display: inline-block;
+    }
+    &:hover{
+       color: chartreuse;
+       //background-color: $color-12;
+       transform: translateX(1rem);
+       //padding: 0 1rem;
+       //transition: all .2s;
+       background-position: 100%;
+    }
+}
+
+//nav-input adjecent sibiling is nav-label. we use plus sign to select the adjecent sibiling and ~ sign for general sibiling
+.nav-input:checked ~ .nav-display {
+    transform: scale(82);
+}
+
+.nav-input:checked ~ .nav-nav{
+    width: 100%;
+    opacity: 1;
+}

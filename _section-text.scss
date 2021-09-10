@@ -1,4 +1,5 @@
 .section1{
+    background-color: $bgcolor;
     height: 120%;
     //background-color: $color-12;
     margin-top: -15%;
@@ -55,6 +56,8 @@
 }
 
 p{
+    color: $text-color;
+    font-weight: 500;
     //text-align: left;
     &:not(:last-child){
         margin-bottom: 1rem;

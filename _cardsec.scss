@@ -1,3 +1,9 @@
+.section3{
+    background-color: $bgcolor;
+
+
+}
+
 .card{
     perspective: 150rem;
     position: relative;
@@ -10,16 +16,25 @@
         position: absolute;
         backface-visibility: hidden;
         width: 100%;
-        box-shadow: 0 1rem 1rem $color-12;
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.281);
         //overflow: hidden;
+        border-radius: 4px;
         
         
 
     }
     .card-side-front{
         //background-color: rgb(77, 187, 187);
-        background-color: white;
+        background-color: rgb(166, 245, 176);
 
+      }
+
+      .card-side-front-1{
+          background-color: rgb(253, 175, 139);
+      }
+
+      .card-side-front-3{
+          background-color: rgb(170, 242, 255);
       }
       
 
